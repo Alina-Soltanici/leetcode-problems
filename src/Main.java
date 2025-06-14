@@ -4,5 +4,7 @@ public class Main {
     public static void main(String[] args) {
         //testing isPalindrome for integer negative and positive input
         System.out.println (PalindromeChecker1.checkIfIntegerIsPalindrome (-123321));
+        //testing roman to integer
+        System.out.println (RomanToInteger.romanToInteger ("MCI"));
     }
 }
