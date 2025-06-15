@@ -14,20 +14,18 @@ public class RomanToInteger {
 
         int total = 0;
         int previousValue = 0;
-        //IX
-        //iterate through the s from right to left
+
         for(int i = s.length ()-1; i >= 0; i--) {
-            char c =  s.charAt (i); //
+            char c =  s.charAt (i);
             int value = roman.get (c);
 
-            if(value < previousValue) { //10 < 0?
+            if(value < previousValue) {
                 total-=value;
             } else {
-                total+=value; //total = 10
+                total+=value;
             }
-            previousValue = value; //10
+            previousValue = value;
         }
-
         return total;
     }
 }
